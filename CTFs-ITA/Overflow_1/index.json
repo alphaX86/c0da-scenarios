@@ -6,9 +6,17 @@
         "text": "intro.md",
         "background": "setup.sh"
     },
+    "steps": [
+      {
+        "title": "Capture the flag",
+        "text": "step1.md",
+        "verify": "verify.sh"
+      }
+    ],
     "assets": {
         "host01": [
-            {"file": "hack", "target": "~/", "chmod": "+w"}
+            {"file": "hack", "target": "~/", "chmod": "+w"},
+            {"file": "hack.c", "target": "/sec/prog", "chmod": "+x"}
         ]
     }
   },
